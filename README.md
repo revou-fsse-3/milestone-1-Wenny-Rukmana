@@ -15,8 +15,6 @@ Mago, a parent company that striving for positive change. It's complementary bus
   - **[GitHub](#github)**
 - **[Deployment](#deployment)**
   - **[NiagaHoster](#niagahoster)**
-  - **[Cloudflare](#Cloudflare)**
-    - **[Register on Cloudflare](#register-on-cloudflare)**
   - **[Netlify](#netlify)**
     - **[Register Netlify & Connect with Github](#register-netlify--connect-with-github)**
     - **[Auto Deployment with Netlify](#auto-deployment-with-netlify)**
@@ -60,7 +58,7 @@ This responsive web was created using HTML, CSS and JavaScript with a little ani
 
 - ### **Github**
   Github repository was cloned before hand. All the files and folders was committed to this repository via source control in VSCode.
-  - Commit changes & Push to Github
+  <img align="center" src="images/github.png" width="300px" height="auto"/><br/>
 
 
   <br/>
@@ -85,42 +83,6 @@ This responsive web was created using HTML, CSS and JavaScript with a little ani
   - After the payment completed, login to <br/>Niagahoster's member area and check the domain name.<br/>
   <img align="center" src="images/buydomain2.png" width="650px" height="auto"/><br/><br/>
   
-- ### **Cloudflare**
-We need a DNS Management and we will using Cloudflare for this.
-
-  - #### **Register on Cloudflare**
-    - Click `sign up` button to register on [Cloudflare](https://www.cloudflare.com/plans/) and choose the free options.<br/>
-    <img align="center" src="images/cloudflare1.png" width="650px" height="auto"/><br/><br/>
-
-    - After the registration process has completed, go to Dashboard to Add site. Enter domain name which has been purchased before on Niagahoster at the text area and click `Continue`<br/>
-    <img align="center" src="images/cloudflare2.png" width="650px" height="auto"/><br/><br/>
-
-    - Choose the Free Plan and click `Continue` <br/>
-    <img align="center" src="images/cloudflare3.png" width="650px" height="auto"/><br/><br/>
-
-    - This is how it looks after the domain DNS scan completed. Click the Continue button.<br/>
-    <img align="center" src="images/cloudflare4.png" width="650px" height="auto"/><br/><br/>
-  
-    - Go back to Niagahoster memberpage's and delete the two nameservers currently in use on Niagahoster, then replace them with the new nameserver details provided by Cloudflare.<br/>
-    <img align="center" src="images/cloudflare5.png" width="650px" height="auto"/><br/>
-
-    > Niagahoster memberpage
-     <img align="center" src="images/cloudflare6.png" width="650px" height="auto"/><br/><br/>
-
-    - Go to Cloudflare page again and click `Done, check nameserver`.
-    - It will show Quick Start Guide. 
-      - In `Improve Security` section, activate the `Automatic HTTPS Rewrites` and `Always use HTTPS` <br/>
-      <img align="center" src="images/cloudflare7.png" width="650px" height="auto"/><br/>
-      <img align="center" src="images/cloudflare8.png" width="650px" height="auto"/><br/><br/>
-
-      - In `Optimize Performance` section, activate Brotli to speed up the page load times<br/> 
-      <img align="center" src="images/cloudflare9.png" width="650px" height="auto"/><br/><br/>
-
-      - Click Finish button<br/> 
-       <img align="center" src="images/cloudflare10.png" width="300px" height="auto"/><br/><br/>
-
-      - If the domain is active at Cloudflare, it will shown as picture below<br/> 
-       <img align="center" src="images/cloudflare11.png" width="650px" height="auto"/><br/><br/>
 
 - ### **Netlify**
   - #### **Register Netlify & Connect with Github**
@@ -140,7 +102,7 @@ We need a DNS Management and we will using Cloudflare for this.
       <img align="center" src="images/netlify5.png" width="300px" height="auto"/><br/>
 
     - Choose the repository and deploy the projects by clicking the deploy button.
-      <img align="center" src="images/netlify9.png" width="300px" height="auto"/><br/>
+      <img align="center" src="images/netlify9.png" width="600px" height="auto"/><br/>
       <img align="center" src="images/netlify10.png" width="300px" height="auto"/><br/>
 
     - Site has been successfully deployed if the status changed to link as shown on below images.<br/>
@@ -148,10 +110,7 @@ We need a DNS Management and we will using Cloudflare for this.
     <img align="center" src="images/netlify12.png" width="300px" height="auto"/><br/>
 
   - #### **Connect Custom Domain with Netlify**
-  - Back to Cloudflare. At DNS management section, click `Add Record` to add `CNAME`.<br/>
-    <img align="center" src="images/cname1.png" width="650px" height="auto"/><br/>
-    <img align="center" src="images/cname2.png" width="650px" height="auto"/><br/>
-  - Back again to Netlify. Go to `Setup your site` Section and click   `Setup a custom Domain`.<br/>
+  - Go to `Setup your site` Section and click   `Setup a custom Domain`.<br/>
     <img align="center" src="images/cname4.png" width="650px" height="auto"/><br/>
   - Add custom domain name and click verify button.<br/>
     <img align="center" src="images/cname5.png" width="650px" height="auto"/><br/>
@@ -173,16 +132,13 @@ We need a DNS Management and we will using Cloudflare for this.
 
 ### **More Simple Way to Custom the Domain Name**
 - At Niagahoster Memberpages, go to `DNS / Name Server` Section.
-<img align="center" src="images/dns1.png" width="650px" height="auto"/><br/>
+  <img align="center" src="images/dns1.png" width="650px" height="auto"/><br/>
 - Click `Change Nameserver` button and change the nameserver at DNS Records section. 
-  > Ps. As my experience, the website's page load is more faster using Niagahoster nameservers compare with using the DNS from Netlify or Cloudflare. The site rarely experienced failed to load / down when we access it<br/>
+- at `Change Nameserver` section, insert DNS provided by Netlify.
+  <img align="center" src="images/dns3.png" width="300px" height="auto"/>
+- The web should be accessible now.
 
-  <img align="center" src="images/dns2.png" width="650px" height="auto"/>
 
-- At `Manage DNS record` section, add `CNAME` which provided by Netlify.
-  <img align="center" src="images/dns3.png" width="650px" height="auto"/><br/>
-  <img align="center" src="images/dns4.png" width="650px" height="auto"/><br/>
-- Voila! You are done.
 
 
 ## Get in Touch
