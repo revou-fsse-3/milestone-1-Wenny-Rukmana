@@ -11,6 +11,7 @@ Mago, a parent company that striving for positive change. It's complementary bus
 - **[Web Development](#web-development)**
   - **[HTML](#html)**
   - **[CSS](#css)**
+  - **[External CSS](#external-css)**
   - **[Javascript](#javascript)**
   - **[GitHub](#github)**
 - **[Deployment](#deployment)**
@@ -51,6 +52,9 @@ This responsive web was created using HTML, CSS and JavaScript with a little ani
 - ### **CSS**
   All styling or transitions in this site was written using CSS in the file named `styles.css` for the styling, and `responsive.css` for responsive display for various size screen.
    <img align="center" src="images/web-displayed6.jpg" width="600px" height="auto"/><br/>
+
+- ### **External Sources**
+  External sources that being used in this web are icons which imported from [font-awesome](https://fontawesome.com/) and Fonts from [Google Fonts](https://fonts.google.com/). 
 
 - ### **JavaScript**
   This site only contains simple JavaScript for the hamburger menu buttons on smaller screen size.
