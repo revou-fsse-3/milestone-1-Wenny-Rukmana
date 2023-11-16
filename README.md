@@ -57,7 +57,7 @@ This responsive web was created using HTML, CSS and JavaScript with a little ani
   <img align="center" src="images/web-displayed5.png" width="400px" height="auto"/><br/>
 
 - ### **Github**
-  Github repository was cloned before hand. All the files and folders was committed to this repository via source control in VSCode.
+  Github repository was cloned before hand. All the files and folders was committed to this repository via source control in VSCode.<br/>
   <img align="center" src="images/github.png" width="300px" height="auto"/><br/>
 
 
@@ -134,8 +134,8 @@ This responsive web was created using HTML, CSS and JavaScript with a little ani
 - At Niagahoster Memberpages, go to `DNS / Name Server` Section.
   <img align="center" src="images/dns1.png" width="650px" height="auto"/><br/>
 - Click `Change Nameserver` button and change the nameserver at DNS Records section. 
-- at `Change Nameserver` section, insert DNS provided by Netlify.
-  <img align="center" src="images/dns3.png" width="300px" height="auto"/>
+- at `Change Nameserver` section, insert DNS provided by Netlify.<br/>
+  <img align="center" src="images/dns3.png" width="300px" height="auto"/><br/>
 - The web should be accessible now.
 
 
